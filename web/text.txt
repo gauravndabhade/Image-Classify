@@ -1,0 +1,1 @@
+{"zebra": 0.9317981600761414, "hartebeest": 0.0013657395029440522, "cheetah, chetah, Acinonyx jubatus": 0.0011561294086277485, "ostrich, Struthio camelus": 0.0008515549125149846, "impala, Aepyceros melampus": 0.000704144302289933}
