@@ -77,7 +77,7 @@ class Classify(Resource):
         postedData = request.get_json()
 
         username = postedData["username"]
-        admin_pw = postedData["admin_pw"]
+        password = postedData["password"]
         url = postedData["url"]
 
         retJson, error = verifyCredentional(username, password)
@@ -100,10 +100,10 @@ class Classify(Resource):
             with open('text.txt') as g:
                 retJson = json.load(g)
                 
-        correct_admin_pw = "abc123"
+        # correct_admin_pw = "abc123"
 
-        if not admin_pw == correct_admin_pw:
-            return jsonify( genrateReturnJson( 304, "Invalid Adminstrator Password"))
+        # if not admin_pw == correct_admin_pw:
+        #     return jsonify( genrateReturnJson( 304, "Invalid Adminstrator Password"))
             
         users.update({
             "Username" : username
